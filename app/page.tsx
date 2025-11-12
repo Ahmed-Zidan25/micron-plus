@@ -119,16 +119,6 @@ return (
         </div>
       </section>
 
-
-
-
-
-
-
-
-
-
-
       {/* Products Showcase */}
      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -151,9 +141,9 @@ return (
                 image: "/images/limestone.jpeg", 
               },
               
-            ].map((product, i) => ( // <-- Mapped the array correctly here!
+            ].map((product, i) => ( 
                 <div key={i} className="group cursor-pointer">
-                  {/* Product Image Container */}
+             
                   <div className="bg-gradient-to-br from-primary/5 to-secondary/5 h-64 rounded-lg mb-4 flex items-center justify-center border border-border group-hover:border-primary transition-colors overflow-hidden">
                     <img
                       src={product.image}
@@ -161,13 +151,13 @@ return (
                       className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" // Added classes for styling
                     />
                   </div>
-                  {/* End Product Image Container */}
+                
                   <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {product.name}
                   </h3>
                   <p className="text-foreground/70">{product.desc}</p>
                 </div>
-            ))} {/* <-- Added closing parenthesis and brace for .map() */}
+            ))} 
           </div>
 
           <div className="mt-12 text-center">
@@ -179,10 +169,8 @@ return (
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
-        </section> {/* <-- This is the closing tag for the Products Showcase section */}
-
-
-      {/* CTA Section */}
+        </section>
+      
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Partner With Us?</h2>
