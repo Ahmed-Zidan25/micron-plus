@@ -119,8 +119,18 @@ return (
         </div>
       </section>
 
+
+
+
+
+
+
+
+
+
+
       {/* Products Showcase */}
-      <section className="py-20">
+     <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-primary">Our Product Range</h2>
 
@@ -133,7 +143,7 @@ return (
               },
               { name: "Talc",
                 desc: "High-purity talc powder for ceramics, cosmetics, and paint applications.",
-              image: "/images/talc.jpg",
+                image: "/images/talc.jpg",
               },
               {
                 name: "Limestone",
@@ -141,23 +151,24 @@ return (
                 image: "/images/limestone.jpeg", 
               },
               
-            ].<div key={i} className="group cursor-pointer">
-      {/* Product Image Container */}
-      <div className="bg-gradient-to-br from-primary/5 to-secondary/5 h-64 rounded-lg mb-4 flex items-center justify-center border border-border group-hover:border-primary transition-colors overflow-hidden">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" // Added classes for styling
-        />
-      </div>
-      {/* End Product Image Container */}
-      <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-        {product.name}
-      </h3>
-      <p className="text-foreground/70">{product.desc}</p>
-    </div>
-  ))}
-</div>
+            ].map((product, i) => ( // <-- Mapped the array correctly here!
+                <div key={i} className="group cursor-pointer">
+                  {/* Product Image Container */}
+                  <div className="bg-gradient-to-br from-primary/5 to-secondary/5 h-64 rounded-lg mb-4 flex items-center justify-center border border-border group-hover:border-primary transition-colors overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" // Added classes for styling
+                    />
+                  </div>
+                  {/* End Product Image Container */}
+                  <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    {product.name}
+                  </h3>
+                  <p className="text-foreground/70">{product.desc}</p>
+                </div>
+            ))} {/* <-- Added closing parenthesis and brace for .map() */}
+          </div>
 
           <div className="mt-12 text-center">
             <Link
