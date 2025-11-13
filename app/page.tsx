@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Zap, Globe, Award, } from "lucide-react"
+import { ArrowRight, Zap, Globe, Award, FlaskConical, Users} from "lucide-react"
 import Link from "next/link"
 import { useEffect, useRef } from "react"
 
