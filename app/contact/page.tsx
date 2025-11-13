@@ -170,15 +170,16 @@ export default function ContactPage() {
               </div>
 
               <button
-                type="submit"
-                className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:bg-secondary transition-colors"
-              >
-                Send Message
-              </button>
-              <div><p></p></div>
-               {/* Social Media Section */}
-          <div>  <Card className="border-border">
-              <CardHeader>
+    type="submit"
+    className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:bg-secondary transition-colors"
+>
+    Send Message
+</button>
+
+{/* Social Media Section */}
+<div className="mt-6">
+  <Card className="border-border">
+   <CardHeader>
                 <CardTitle className="text-card-foreground">Follow Us</CardTitle>
                 <CardDescription>Stay connected through our social media channels</CardDescription>
               </CardHeader>
@@ -190,7 +191,7 @@ export default function ContactPage() {
            
           </div>
         </div>
-        <div className="mb-20">
+        <div className="mt-6">
   <Card className="border-border">
     <CardHeader>
      <CardTitle className="text-gray-800 flex items-center space-x-2">
