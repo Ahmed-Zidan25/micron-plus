@@ -175,6 +175,7 @@ export default function ContactPage() {
               >
                 Send Message
               </button>
+              <div><p></p></div>
                {/* Social Media Section */}
           <div>  <Card className="border-border">
               <CardHeader>

@@ -16,7 +16,7 @@ export function Header() {
     <img
       src="/images/logo.png" // **Update this path to your actual logo file**
       alt="Micron Plus Logo"
-      className="h-12 w-auto" // **Adjust height (h-8) as needed**
+      className="h-16 w-auto" // **Adjust height (h-8) as needed**
     />
   </Link>
 
