@@ -74,21 +74,21 @@ export function Footer() {
           </div>
 {/* Contact & Social */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Connect With Us</h3>
+            <h3 className="text-sm opacity-90 leading-relaxed">Connect With Us</h3>
             <SocialMedia variant="minimal" />
-            <p className="text-muted-foreground text-sm">
-              Cairo, Egypt
+            <p className="text-sm opacity-90 leading-relaxed">
+             Buliding 7127, Miraj city, Maadi, Cairo, Egypt 
               <br />
-              +20 100 353 9052
+              +20 1110716765
               <br />
-              Export@deltafoodstuffs.com
+              commercial@micron-plus.com
             </p>
           </div>
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-muted-foreground text-sm">
-            ©2024 Delta Food Stuffs | All rights reserved | Premium Egyptian Produce Worldwide
+          <p className="text-sm opacity-90 leading-relaxed">
+            ©2023 micron-plus | All rights reserved | Empowering Industries with Premium Minerals & Chemicals
           </p>
         </div>
       </div>

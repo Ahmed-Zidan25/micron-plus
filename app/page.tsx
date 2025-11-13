@@ -30,12 +30,12 @@ return (
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden">
       <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
-        <source
-          src="https://or8t5wydhh9bdwn6.public.blob.vercel-storage.com/home_page_video.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tags.
-      </video>
+  <source
+    src="https://or8t5wydhh9bdwn6.public.blob.vercel-storage.com/home-page-video.mp4"
+    type="video/mp4"
+  />
+  Your browser does not support the video tags.
+</video>
 
           {/* <video autoPlay muted loop playsInline className="w-full h-full object-cover">
             <source src="/industrial-minerals-background.jpg" type="video/mp4" />

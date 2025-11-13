@@ -10,11 +10,15 @@ export function Header() {
   return (
     <header className="fixed top-0 w-full bg-white border-b border-border z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link href="/" className="font-bold text-2xl text-primary tracking-tight">
-            Micron Plus
-          </Link>
+       <div className="flex justify-between items-center h-16">
+  {/* Logo */}
+  <Link href="/" className="flex items-center"> {/* Removed the old text styling */}
+    <img
+      src="/images/logo.png" // **Update this path to your actual logo file**
+      alt="Micron Plus Logo"
+      className="h-8 w-auto" // **Adjust height (h-8) as needed**
+    />
+  </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
