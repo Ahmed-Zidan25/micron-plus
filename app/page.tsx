@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Zap, Globe, Award } from "lucide-react"
+import { ArrowRight, Zap, Globe, Award, } from "lucide-react"
 import Link from "next/link"
 import { useEffect, useRef } from "react"
 
@@ -94,20 +94,23 @@ return (
                 description: "Decades of experience serving pharmaceutical, cosmetic, paint, and industrial sectors.",
               },
               {
-                icon: <Award className="w-8 h-8" />,
-                title: "High Product Purity",
-                description: "Natural Calcium Carbonate with 99.5% purity and 98% brightness, among the highest globally.",
-              },
-              {
-                icon: <Award className="w-8 h-8" />,
-                title: "Extensive Export Network",
-                description: "Over 8,000 MT monthly exports to leading Asian and African markets.",
-              },
-              {
-                icon: <Award className="w-8 h-8" />,
-                title: "Customer-Centric Solutions",
-                description: "Tailored product offerings and competitive pricing to guarantee satisfaction and loyalty.",
-              },
+    icon: <FlaskConical className="w-8 h-8" />, // Icon for Purity/Lab testing
+    title: "High Product Purity",
+    description:
+      "Natural Calcium Carbonate with 99.5% purity and 98% brightness, among the highest globally.",
+  },
+  {
+    icon: <Globe className="w-8 h-8" />, // Icon for International Network/Exports
+    title: "Extensive Export Network",
+    description:
+      "Over 8,000 MT monthly exports to leading Asian and African markets.",
+  },
+  {
+    icon: <Users className="w-8 h-8" />, // Icon for Customer Focus/Service
+    title: "Customer-Centric Solutions",
+    description:
+      "Tailored product offerings and competitive pricing to guarantee satisfaction and loyalty.",
+  },
             ].map((feature, i) => (
               <div key={i} className="bg-white p-8 rounded-lg border border-border hover:shadow-lg transition-shadow">
                 <div className="text-primary mb-4">{feature.icon}</div>

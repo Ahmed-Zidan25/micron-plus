@@ -11,11 +11,13 @@ export function Footer() {
           <div>
   {/* Logo Placement */}
   <div className="mb-4">
+    <Link href="/" className="flex items-center">
     <img
-      src="/images/logo.png" // **REPLACE** with the actual path to your logo file
+      src="/images/logo.png"
       alt="Micron Plus Logo"
-      className="h-8" // Adjust height as needed (e.g., h-10, w-auto)
+      className="h-8 sm:h-18 w-auto" // <-- Changed the classes
     />
+</Link>
   </div>
   {/* End Logo Placement */}
   
