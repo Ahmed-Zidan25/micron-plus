@@ -189,50 +189,39 @@ export default function ContactPage() {
           </div>
         </div>
         <div className="mb-20">
-          <Card className="border-border">
-            <CardHeader>
-             <CardTitle className="text-gray-800 flex items-center space-x-2">
-              <MapPin className="h-5 w-5 text-red-600" />
-              <span>Find Us</span>
-            </CardTitle>
-  
-              <CardDescription>Our head office location in Cairo, Egypt</CardDescription>
-            </CardHeader>
-            <CardContent>
-            {/* The interactive map is embedded here using an iframe. */}
-            <div className="aspect-[21/9] rounded-xl overflow-hidden shadow-xl">
-             <iframe 
-    width="100%" 
-    height="450" 
-    frameborder="0" 
-    style="border:0" 
-    src="https://maps.google.com/?q=Cairo,%Maadi,%Miraj%city%Buliding%7127&output=embed"
-    allowfullscreen 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-             
-             {/*  <iframe
-                // The source uses the specified address for accurate pinning
-                src="https://maps.google.com/maps?q=100%20Al%20Merghani,%20Al%20Golf,%20Nasr%20City,%20Cairo%20Governorate%204451426,%20Egypt&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Delta Foodstuffs Office Location"
-              ></iframe> */}
-            </div>
-            
-            {/* Displaying the physical address for clarity */}
-            <p className="text-sm text-gray-600 mt-4 flex items-center justify-center sm:justify-start">
-                <MapPin className="h-4 w-4 text-teal-600 mr-2" />
-                Buliding 7127, Miraj city, Maadi, Cairo, Egypt
-            </p>
-          </CardContent>
-          </Card>
-        </div> 
+  <Card className="border-border">
+    <CardHeader>
+     <CardTitle className="text-gray-800 flex items-center space-x-2">
+      <MapPin className="h-5 w-5 text-red-600" />
+      <span>Find Us</span>
+    </CardTitle>
+
+      <CardDescription>Our head office location in Cairo, Egypt</CardDescription>
+    </CardHeader>
+    <CardContent>
+    {/* The interactive map is embedded here using an iframe. */}
+    <div className="aspect-[21/9] rounded-xl overflow-hidden shadow-xl">
+     <iframe
+      width="100%"
+      height="450"
+      frameborder="0"
+      style={{ border: 0 }} // ✅ FIX: Changed from string "border:0" to object {{ border: 0 }}
+      src="https://maps.google.com/?q=Cairo,%Maadi,%Miraj%city%Buliding%7127&output=embed"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    </div>
+
+    {/* Displaying the physical address for clarity */}
+    <p className="text-sm text-gray-600 mt-4 flex items-center justify-center sm:justify-start">
+        <MapPin className="h-4 w-4 text-teal-600 mr-2" />
+        Buliding 7127, Miraj city, Maadi, Cairo, Egypt
+    </p>
+  </CardContent>
+  </Card>
+</div>
 
       </section>
 
