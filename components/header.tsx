@@ -16,7 +16,7 @@ export function Header() {
     <img
       src="/images/logo.png"
       alt="Micron Plus Logo"
-      className="h-8 sm:h-22 w-auto" // <-- Changed the classes
+      className="h-8 sm:h-18 w-auto" // <-- Changed the classes
     />
 </Link>
 
