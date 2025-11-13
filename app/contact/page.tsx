@@ -175,9 +175,8 @@ export default function ContactPage() {
               >
                 Send Message
               </button>
-            </form>
-            {/* Social Media Section */}
-            <Card className="border-border">
+               {/* Social Media Section */}
+          <div>  <Card className="border-border">
               <CardHeader>
                 <CardTitle className="text-card-foreground">Follow Us</CardTitle>
                 <CardDescription>Stay connected through our social media channels</CardDescription>
@@ -185,7 +184,9 @@ export default function ContactPage() {
               <CardContent>
                 <SocialMedia showLabels />
               </CardContent>
-            </Card>
+            </Card></div>
+            </form>
+           
           </div>
         </div>
         <div className="mb-20">
