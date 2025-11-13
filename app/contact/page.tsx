@@ -3,6 +3,8 @@
 import type React from "react"
 
 import { Header } from "@/components/header"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import SocialMedia from "@/components/social-media"
 import { Footer } from "@/components/footer"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
 import { useState } from "react"
