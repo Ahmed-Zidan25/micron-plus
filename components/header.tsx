@@ -12,13 +12,13 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
        <div className="flex justify-between items-center h-16">
   {/* Logo */}
-  <Link href="/" className="flex items-center"> {/* Removed the old text styling */}
+<Link href="/" className="flex items-center">
     <img
-      src="/images/logo.png" // **Update this path to your actual logo file**
+      src="/images/logo.png"
       alt="Micron Plus Logo"
-      className="h-16 w-auto" // **Adjust height (h-8) as needed**
+      className="h-8 sm:h-12 w-auto" // <-- Changed the classes
     />
-  </Link>
+</Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
