@@ -12,11 +12,16 @@ export function Footer() {
   {/* Logo Placement */}
   <div className="mb-4">
     <Link href="/" className="flex items-center">
-    <img
+   <img
+      src="/images/logo-light.png" // <--- Change to the white logo file
+      alt="Micron Plus Logo"
+      className="h-8 sm:h-18 w-auto"
+    />
+ {/*    <img
       src="/images/logo.png"
       alt="Micron Plus Logo"
       className="h-8 sm:h-18 w-auto" // <-- Changed the classes
-    />
+    /> */}
 </Link>
   </div>
   {/* End Logo Placement */}
@@ -76,7 +81,8 @@ export function Footer() {
           </div>
 {/* Contact & Social */}
           <div className="space-y-4">
-            <h3 className="text-sm opacity-90 leading-relaxed">Connect With Us</h3>
+             <h4 className="font-semibold mb-4">Connect With Us</h4>
+            
             <SocialMedia variant="minimal" />
             <p className="text-sm opacity-90 leading-relaxed">
              Buliding 7127, Miraj city, Maadi, Cairo, Egypt 
