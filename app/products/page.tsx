@@ -157,8 +157,12 @@ export default function ProductsPage() {
             Our technical team can provide custom grading, packaging, and formulations tailored to your specific
             requirements.
           </p>
-          <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
+           
+              <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
+          <Link
+              href="/contact">
             Contact Our Technical Team
+           </Link>
           </button>
         </div>
       </section>
