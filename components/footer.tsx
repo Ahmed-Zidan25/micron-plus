@@ -89,7 +89,7 @@ export function Footer() {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm opacity-90 leading-relaxed">
-            <b>©2023 micron-plus | All rights reserved | Empowering Industries with Premium Minerals & Chemicals</b>
+            ©2023 micron-plus | All rights reserved | Empowering Industries with Premium Minerals & Chemicals
           </p>
         </div>
       </div>

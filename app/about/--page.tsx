@@ -67,38 +67,26 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Industries Served */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-primary mb-12">Industries We Serve</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: "Pharmaceuticals", image: "/images/pharmaceutical.jpg" },
-              { name: "Cosmetics", image: "/images/cosmetics.jpg" },
-              { name: "Paints & Coatings", image: "/images/paints-coatings.jpg" },
-              { name: "Plastics", image: "/images/plastics.jpg" },
-              { name: "Ceramics", image: "/images/ceramics.jpg" },
-              { name: "Construction", image: "/images/construction.jpg" },
-              { name: "Agriculture", image: "/images/agriculture.jpg" },
-              { name: "Food & Beverage", image: "/images/food-beverage.jpg" },
+              "Pharmaceuticals",
+              "Cosmetics",
+              "Paints & Coatings",
+              "Plastics",
+              "Ceramics",
+              "Construction",
+              "Agriculture",
+              "Food & Beverage",
             ].map((industry, i) => (
               <div
                 key={i}
-                className="group flex flex-col rounded-lg overflow-hidden border border-border bg-card cursor-pointer shadow-md transition-all duration-300 hover:shadow-xl hover:border-primary"
+                className="bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-lg border border-border text-center font-semibold text-foreground hover:border-primary transition-colors cursor-pointer"
               >
-                <div className="relative h-64 overflow-hidden">
-                  <Image
-                    src={industry.image || "/placeholder.svg"}
-                    alt={industry.name}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                </div>
-                
-                <div className="flex items-center justify-center p-4">
-                  <h3 className="text-lg md:text-base font-bold text-foreground text-center transition-transform duration-300 group-hover:scale-105">
-                    {industry.name}
-                  </h3>
-                </div>
+                {industry}
               </div>
             ))}
           </div>
