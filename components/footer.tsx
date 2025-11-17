@@ -4,24 +4,19 @@ import SocialMedia from "./social-media";
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground border-t border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-white text-gray-800 border-t border-border">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
   {/* Logo Placement */}
   <div className="mb-4">
     <Link href="/" className="flex items-center">
-   <img
-      src="/images/logo-light.png" // <--- Change to the white logo file
-      alt="Micron Plus Logo"
-      className="h-8 sm:h-18 w-auto"
-    />
- {/*    <img
+    <img
       src="/images/logo.png"
       alt="Micron Plus Logo"
       className="h-8 sm:h-18 w-auto" // <-- Changed the classes
-    /> */}
+    />
 </Link>
   </div>
   {/* End Logo Placement */}
