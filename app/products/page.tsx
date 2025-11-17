@@ -2,6 +2,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { CheckCircle } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function ProductsPage() {
   const products = [
